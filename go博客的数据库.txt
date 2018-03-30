@@ -1,0 +1,19 @@
+﻿create table article(
+	
+           id int(11) unsigned not null AUTO_INCREMENT,
+    
+           title varchar(100) not null DEFAULT '',
+   
+           author varchar(50) not null DEFAULT 'me',
+    
+           content text,
+    
+           created int(11) unsigned not null DEFAULT 0,
+    
+           updated int(11) unsigned not null DEFAULT 0,
+    
+           state tinyint(1) unsigned not null DEFAULT 1 COMMENT '0 不可见 1 所有人可见 2自己可见',
+    PRIMARY key(id)
+          
+)ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT charset=utf8;
+
